@@ -1,0 +1,50 @@
+<mvc:View xmlns:table="sap.ui.table" controllerName="com.odata.northwindassignment.controller.master"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Employee Data">
+        <content>
+       <Text text="kalesha"></Text>
+        <Table
+
+        items="{empitems>/results}" >
+<columns>
+                        <Column width="12em">
+                            <Text text="Employee Id" />
+                        </Column>
+                        <Column width="12em">
+                            <Text text="First Name" />
+                        </Column>
+                         <Column width="12em">
+                            <Text text="Last Name" />
+                        </Column>
+                         <Column width="12em">
+                            <Text text="Title" />
+                        </Column>
+                         <Column width="12em">
+                            <Text text="City" />
+                        </Column>
+                         <Column width="12em">
+                            <Text text="Region" />
+                        </Column>
+                        <Column width="12em">
+                            <Text text="Country" />
+                        </Column>
+                        </columns>
+                        <items>
+                        <ColumnListItem press="onPress" type="Navigation">
+                        <cells>
+                        <Text text="{empitems>EmployeeID}"></Text>
+                        <Text text="{empitems>FirstName}"></Text>
+                        <Text text="{empitems>LastName}"></Text>
+                        <Text text="{empitems>Title}"></Text>
+                        <Text text="{empitems>City}"></Text>
+                        <Text text="{empitems>Region}"></Text>
+                        <Text text="{empitems>Country}"></Text>
+
+                        </cells></ColumnListItem>
+                        </items>
+        </Table>
+        
+        </content>
+    </Page>
+</mvc:View>
